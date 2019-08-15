@@ -39,6 +39,12 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+    @media @mobile {
+      padding-bottom: 30px;
+    border-bottom: 2px dashed #C0C0C0;
+    display: flex;
+    flex-direction: column-reverse;
+    }
 
     .text-content {
       padding-left: 1%;
@@ -76,26 +82,27 @@
       margin-bottom: 30px;
       @media @mobile{
         width:100%;
+        display:flex;
+        flex-direction: column;
+        align-items:center;
       }
     }
   }
-}// home
+}
 div.btn {
   display: flex;
   justify-content: center;
-  background-color: #248080;
   margin: 0 0px 20px;
   cursor: pointer;
   width: 83%;
   height: 14%;
-  border-radius: 10px;
+  
   button {
-    .custom-button(white, 1.8rem) 
+    border-radius: 10px;
+    .custom-button(white, 2.8rem, @eastern-blue);
   }
 }
-button {
-  .custom-button(white, 1.8rem)
-}
+
 section.welcome {
   padding-top:2%;
   border-bottom:dashed;
