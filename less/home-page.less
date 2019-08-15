@@ -5,17 +5,30 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    @media @mobile{
+      flex-direction:column;
+      align-items: center;
+      width: 100%;
+      }
 
    
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+      @media @mobile {
+        width: 100%;
+        padding: 1%;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+      @media @mobile{
+        width: 100%;
+        padding: 1%;
+      }
 
       img {
         border-radius: 10px;
@@ -52,10 +65,18 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    @media @mobile{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      @media @mobile{
+        width:100%;
+      }
     }
   }
 }// home
@@ -78,4 +99,10 @@ button {
 section.welcome {
   padding-top:2%;
   border-bottom:dashed;
+  
+}
+div.img-content {
+  @media @mobile{
+    justify-content: center;
+  }
 }
