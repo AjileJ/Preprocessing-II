@@ -1,26 +1,33 @@
 // Navigation Styles here
 .navsection {
+  .custom-flex(space-between, center);
+  border-bottom: dashed;
+  margin-top: 3%;
+  padding-bottom: 4%;
+  @media @mobile{
+  flex-direction:column;
+  }
+  div.maintitle{
+    // margin-top:4%;
+  }
+  nav {
     display: flex;
-    justify-content: space-between;
-    border-bottom: dashed;
-    margin-top: 3%;
-    padding-bottom: 4%;
+    width: 55%;
+    justify-content: space-evenly;
+    a {
+      text-decoration:none;
+      
+      color: rgba(0, 0, 0, 0.9);
+      font-size: 1.1rem;
+      
+    
+    }
+  }
 }
-a {
-  text-decoration:none;
-  padding: 8%;
-  color: rgba(0, 0, 0, 0.9);
-  font-size: 1.1rem;
 
-}
-nav {
-  display: flex;
-  width: 49%;
-  justify-content: flex-end;
-}
-div.maintitle{
-  margin-top:4%;
-}section.welcome {
-  padding-top:2%;
-  border-bottom:dashed;
-}
+
+
+
+
+
+

@@ -167,31 +167,30 @@ img {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+  padding: 2rem;
 }
 .navsection {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   border-bottom: dashed;
   margin-top: 3%;
   padding-bottom: 4%;
 }
-a {
+@media (max-width: 500px) {
+  .navsection {
+    flex-direction: column;
+  }
+}
+.navsection nav {
+  display: flex;
+  width: 55%;
+  justify-content: space-evenly;
+}
+.navsection nav a {
   text-decoration: none;
-  padding: 8%;
   color: rgba(0, 0, 0, 0.9);
   font-size: 1.1rem;
-}
-nav {
-  display: flex;
-  width: 49%;
-  justify-content: flex-end;
-}
-div.maintitle {
-  margin-top: 4%;
-}
-section.welcome {
-  padding-top: 2%;
-  border-bottom: dashed;
 }
 .footer {
   width: 100%;
@@ -260,7 +259,15 @@ div.btn {
   height: 14%;
   border-radius: 10px;
 }
+div.btn button {
+  color: white;
+  font-size: 1.8rem;
+}
 button {
   color: white;
   font-size: 1.8rem;
+}
+section.welcome {
+  padding-top: 2%;
+  border-bottom: dashed;
 }
